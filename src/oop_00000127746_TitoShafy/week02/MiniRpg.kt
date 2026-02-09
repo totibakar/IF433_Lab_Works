@@ -1,6 +1,6 @@
 package oop_00000127746_TitoShafy.week02
 
-class Hero(val name: String, var hp: Int = 100, var baseDamage: Int) {
+class Hero(val name: String, var baseDamage: Int, var hp: Int = 100) {
     fun attack(targetName: String){
         println("$name is attacking $targetName")
     }
