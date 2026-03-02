@@ -11,5 +11,12 @@ fun main() {
         println("\nMemproses pembayaran untuk akun: ${method.accountName}")
         method.processPayment(75000.0)
 
+        if (method is EWallet) {
+            println("--> Sistem mendeteksi EWallet. Melakukan top up otomatis.")
+            method.topUp(50000.0)
+
+            println("--> Mencoba proses pembayaran ulang.")
+            method.processPayment(75000.0)
+        }
     }
 }
