@@ -24,4 +24,5 @@ fun main() {
             println("ERROR: Data corrupt terdeteksi! -> ${e.message}")
         }
     }
+
 }
