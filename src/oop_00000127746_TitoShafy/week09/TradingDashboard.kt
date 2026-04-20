@@ -32,4 +32,5 @@ fun main() {
 
     println("\nTRADED PAIRS")
     println(uniquePairs)
+
 }
