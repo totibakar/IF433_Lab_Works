@@ -18,4 +18,5 @@ fun main() {
     val txRepo = WalletRepository<Transaction>()
     txRepo.add(Transaction("TX-9921", 0.012))
     txRepo.add(Transaction("TX-9922", 250.0))
+
 }
