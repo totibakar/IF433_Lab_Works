@@ -36,4 +36,9 @@ fun main() {
 
     val totalPower = homeDevices.run { sumOf { it.powerLoad } }
     println("Total penggunaan daya: $totalPower Watt")
+
+    println("\n=== PIPELINE STATUS ===")
+    homeDevices.forEach {
+        println(it.diagnose())
+    }
 }
