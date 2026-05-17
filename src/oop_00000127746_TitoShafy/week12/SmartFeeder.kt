@@ -45,4 +45,5 @@ fun main() {
         println("Peringatan ke Pemilik: ${e.message}")
         println("(Opsional: Berikan chicken jerky secara manual)")
     }
+
 }
